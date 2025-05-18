@@ -6,9 +6,18 @@
   color: rgba(120, 117, 254, 1);
   font-size: 20px;
   transition: all 0.3 ease;
+  &:focus {
+    background: rgba(218, 217, 251, 1);
+    border: 1px solid rgba(120, 117, 254, 1);
+  }
   &:hover {
     background: rgba(120, 117, 254, 1);
     color: rgba(255, 255, 255, 1);
+    border: none;
+  }
+  &:active {
+    background: rgba(73, 70, 180, 1);
+    border: none;
   }
 }
 
@@ -17,9 +26,35 @@
   color: rgba(120, 117, 254, 1);
   font-size: 20px;
   width: fit-content;
+  padding: 4px;
   &::after {
-    padding-top: 1px;
-    content: url("/assets/images/arrow_right.svg");
-    margin-left: 5px;
+    content: "";
+    display: inline-block;
+    mask: url("/assets/images/arrow_right.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    margin-top: 2px;
+    background-color: rgba(120, 117, 254, 1);
+  }
+  &:focus {
+    color: rgba(120, 117, 254, 1);
+    background: rgba(218, 217, 251, 1);
+    &::after {
+      background-color: rgba(120, 117, 254, 1);
+    }
+  }
+  &:hover {
+    color: rgba(73, 70, 180, 1);
+    &::after {
+      background-color: rgba(73, 70, 180, 1);
+    }
+  }
+
+  &:active {
+    color: rgba(73, 70, 180, 1);
+    &::after {
+      background-color: rgba(73, 70, 180, 1);
+    }
   }
 }

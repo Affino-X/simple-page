@@ -31,6 +31,8 @@ a {
   color: inherit;
   font: inherit;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 main {
@@ -81,9 +83,18 @@ span {
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
 }
+.simple-button:focus {
+  background: rgb(218, 217, 251);
+  border: 1px solid rgb(120, 117, 254);
+}
 .simple-button:hover {
   background: rgb(120, 117, 254);
   color: rgb(255, 255, 255);
+  border: none;
+}
+.simple-button:active {
+  background: rgb(73, 70, 180);
+  border: none;
 }
 
 .simple-link {
@@ -95,11 +106,37 @@ span {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding: 4px;
 }
 .simple-link::after {
-  padding-top: 1px;
-  content: url("/assets/images/arrow_right.svg");
-  margin-left: 5px;
+  content: "";
+  display: inline-block;
+  -webkit-mask: url("/assets/images/arrow_right.svg") no-repeat center;
+          mask: url("/assets/images/arrow_right.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  margin-top: 2px;
+  background-color: rgb(120, 117, 254);
+}
+.simple-link:focus {
+  color: rgb(120, 117, 254);
+  background: rgb(218, 217, 251);
+}
+.simple-link:focus::after {
+  background-color: rgb(120, 117, 254);
+}
+.simple-link:hover {
+  color: rgb(73, 70, 180);
+}
+.simple-link:hover::after {
+  background-color: rgb(73, 70, 180);
+}
+.simple-link:active {
+  color: rgb(73, 70, 180);
+}
+.simple-link:active::after {
+  background-color: rgb(73, 70, 180);
 }
 
 .header {
@@ -138,6 +175,20 @@ span {
   display: flex;
   gap: 60px;
 }
+.nav__item a {
+  padding: 0 5px;
+}
+.nav__item a:focus {
+  color: rgb(76, 88, 102);
+  background: rgb(218, 217, 251);
+}
+.nav__item a:hover {
+  color: rgb(120, 117, 254);
+}
+.nav__item a:active {
+  color: rgb(73, 70, 180);
+}
+
 .hero {
   position: relative;
   height: 620px;

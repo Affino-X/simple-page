@@ -37,5 +37,18 @@
   // .nav__item
 
   &__item {
+    a {
+      padding: 0 5px;
+      &:focus {
+        color: rgba(76, 88, 102, 1);
+        background: rgba(218, 217, 251, 1);
+      }
+      &:hover {
+        color: rgba(120, 117, 254, 1);
+      }
+      &:active {
+        color: rgba(73, 70, 180, 1);
+      }
+    }
   }
 }
