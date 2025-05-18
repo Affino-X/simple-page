@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgb(76, 88, 102);
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bg-gray {
+  background: rgb(235, 235, 235);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(76, 88, 102);
+  font-weight: 400;
+  line-height: 100%;
+}
+
+p,
+span {
+  line-height: 150%;
+  color: rgb(133, 133, 155);
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.simple-button {
+  border: solid 1px rgb(120, 117, 254);
+  height: 70px;
+  max-width: 255px;
+  width: 100%;
+  color: rgb(120, 117, 254);
+  font-size: 20px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+.simple-button:hover {
+  background: rgb(120, 117, 254);
+  color: rgb(255, 255, 255);
+}
+
+.simple-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgb(120, 117, 254);
+  font-size: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.simple-link::after {
+  padding-top: 1px;
+  content: url("/assets/images/arrow_right.svg");
+  margin-left: 5px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 29px 0;
+  height: 80px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1110px;
+  width: 100%;
+}
+.header__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.nav {
+  font-size: 20px;
+}
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+}
+.hero {
+  position: relative;
+  height: 620px;
+  overflow: hidden;
+  padding-top: 130px;
+}
+.hero__content {
+  display: grid;
+  grid-template-rows: auto;
+  max-width: 445px;
+  height: 361px;
+  gap: 30px;
+}
+.hero__title {
+  font-size: 60px;
+}
+.hero__excerpt {
+  font-size: 18px;
+  padding-right: 30px;
+}
+.hero__image {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  max-width: 540px;
+  width: 100%;
+  height: auto;
+}
+.hero__image img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.paper {
+  padding: 90px 0;
+}
+.paper__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 90px;
+}
+.paper__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.paper__item {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  border-top: 1px solid rgb(192, 192, 192);
+  padding-top: 20px;
+  height: 118px;
+  width: 100%;
+}
+.paper__content h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.paper__bottom {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 3fr 350px;
+  gap: 30px;
+}
+.paper__right h2 {
+  color: rgb(102, 102, 102);
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.paper__right p {
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+.product {
+  padding: 90px 0;
+}
+.product__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.product__image {
+  margin-bottom: 20px;
+}
+.product__title {
+  font-size: 30px;
+  height: 35px;
+}
+.product__count {
+  margin: 5px 0;
+  color: rgb(181, 181, 189);
+  font-size: 14px;
+}
+.product__excerpt {
+  margin-bottom: 20px;
+  line-height: 170%;
+  max-height: 155px;
+  height: 100%;
+  padding-right: 30px;
+  padding-top: 2px;
+}
+.brands {
+  padding: 90px;
+}
+.brands__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.brands__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border: 1px solid rgb(196, 196, 196);
+  height: 135px;
+}
+.brands__image {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: center;
+     object-position: center;
+  width: 80%;
+  height: auto;
+}
+
+.sketch {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  padding-top: 130px;
+}
+.sketch__content {
+  display: grid;
+  grid-template-rows: auto;
+  max-width: 350px;
+  max-height: 272px;
+  gap: 8px;
+}
+.sketch__title {
+  font-size: 40px;
+}
+.sketch__excerpt {
+  font-size: 18px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+.sketch__image {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  max-width: 730px;
+  width: 100%;
+  height: auto;
+}
+.sketch__image img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.footer__top {
+  height: 80px;
+  background: rgb(76, 88, 102);
+  padding: 29px 0;
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.footer__bottom {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(76, 88, 102);
+  font-size: 13px;
+}
+.footer__bottom span {
+  color: rgba(133, 126, 126, 0.516);
+}

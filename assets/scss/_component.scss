@@ -1,0 +1,25 @@
+.simple-button {
+  border: solid 1px rgba(120, 117, 254, 1);
+  height: 70px;
+  max-width: 255px;
+  width: 100%;
+  color: rgba(120, 117, 254, 1);
+  font-size: 20px;
+  transition: all 0.3 ease;
+  &:hover {
+    background: rgba(120, 117, 254, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.simple-link {
+  display: flex;
+  color: rgba(120, 117, 254, 1);
+  font-size: 20px;
+  width: fit-content;
+  &::after {
+    padding-top: 1px;
+    content: url("/assets/images/arrow_right.svg");
+    margin-left: 5px;
+  }
+}

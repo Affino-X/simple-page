@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgba(76, 88, 102, 1);
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.bg-gray {
+  background: rgba(235, 235, 235, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(76, 88, 102, 1);
+  font-weight: 400;
+  line-height: 100%;
+}
+
+p,
+span {
+  line-height: 150%;
+  color: rgba(133, 133, 155, 1);
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}

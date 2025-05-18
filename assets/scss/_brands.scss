@@ -1,0 +1,32 @@
+.brands {
+  // .brands__list
+  padding: 90px;
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  // .brands__item
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    // padding: 12% 14%;
+    border: 1px solid rgba(196, 196, 196, 1);
+    height: 135px;
+  }
+
+  // .brands__image
+
+  &__image {
+    object-fit: scale-down;
+    object-position: center;
+    width: 80%;
+    height: auto;
+  }
+}
+.wrapper {
+}

@@ -1,0 +1,46 @@
+.footer {
+  // .footer__top
+
+  &__top {
+    height: 80px;
+    background: rgba(76, 88, 102, 1);
+    padding: 29px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .footer__logo
+
+  &__logo {
+  }
+
+  // .footer__socials
+
+  &__socials {
+    display: flex;
+    gap: 30px;
+  }
+
+  // .footer__item
+
+  &__item {
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+    height: max-content;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(76, 88, 102, 1);
+    font-size: 13px;
+    span {
+      color: rgba(133, 126, 126, 0.516);
+    }
+  }
+}
+.wrapper {
+}
