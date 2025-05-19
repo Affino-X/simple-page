@@ -1,14 +1,16 @@
 .hero {
-  position: relative;
-  height: 620px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 620px;
   overflow: hidden;
   padding-top: 130px;
   &__content {
     display: grid;
     grid-template-rows: auto;
     max-width: 445px;
-    height: 361px;
+    min-height: 361px;
     gap: 30px;
+    margin-bottom: 120px;
   }
   &__title {
     font-size: 60px;
@@ -19,12 +21,10 @@
   }
 
   &__image {
-    position: absolute;
-    top: 60px;
-    right: 0;
     max-width: 540px;
     width: 100%;
     height: auto;
+    margin-top: auto;
     img {
       object-fit: fill;
       object-position: center;

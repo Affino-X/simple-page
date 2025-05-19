@@ -1,13 +1,15 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 29px 0;
-  height: 80px;
+  min-height: 80px;
   border-bottom: 1px solid rgba(221, 221, 221, 1);
   // .header__logo
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1110px;
     width: 100%;
   }
@@ -24,6 +26,7 @@
   // .header__button
 
   &__button {
+    width: 40px;
   }
 }
 .nav {
@@ -31,6 +34,8 @@
   font-size: 20px;
   &__list {
     display: flex;
+    align-items: center;
+    white-space: nowrap;
     gap: 60px;
   }
 

@@ -1,52 +1,13 @@
-.product {
-  padding: 90px 0;
+.category-card {
+  padding: 90px;
+  min-height: 645px;
   // .product__list
 
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
-  }
-
-  // .product__item
-
-  &__item {
-  }
-
-  // .product__image
-
-  &__image {
-    margin-bottom: 20px;
-  }
-
-  // .product__title
-
-  &__title {
-    font-size: 30px;
-    height: 35px;
-  }
-
-  // .product__count
-
-  &__count {
-    margin: 5px 0;
-    color: rgba(181, 181, 189, 1);
-    font-size: 14px;
-  }
-
-  // .product__excerpt
-
-  &__excerpt {
-    margin-bottom: 20px;
-    line-height: 170%;
-    max-height: 155px;
-    height: 100%;
-    padding-right: 30px;
-    padding-top: 2px;
-  }
-
-  // .product__link
-
-  &__link {
+    column-gap: 30px;
+    row-gap: 60px;
+    height: auto;
   }
 }

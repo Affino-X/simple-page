@@ -1,6 +1,6 @@
 .brands {
   // .brands__list
-  padding: 90px;
+  padding: 90px 0;
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -16,7 +16,8 @@
     overflow: hidden;
     // padding: 12% 14%;
     border: 1px solid rgba(196, 196, 196, 1);
-    height: 135px;
+    min-height: 135px;
+    height: 100%;
   }
 
   // .brands__image
